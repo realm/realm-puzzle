@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22AEE4F91E6D63AF00207B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4DC1E6D63AF00207B17 /* AppDelegate.m */; };
+		22AEE4FD1E6D63AF00207B17 /* RLMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4E51E6D63AF00207B17 /* RLMViewController.m */; };
+		22AEE5001E6D63AF00207B17 /* RLMPuzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4EA1E6D63AF00207B17 /* RLMPuzzle.m */; };
+		22AEE5011E6D63AF00207B17 /* RLMPuzzlePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4EC1E6D63AF00207B17 /* RLMPuzzlePiece.m */; };
+		22AEE5021E6D63AF00207B17 /* Puzzle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE4ED1E6D63AF00207B17 /* Puzzle-Info.plist */; };
+		22AEE5041E6D63AF00207B17 /* RLMPuzzlePieceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */; };
+		22AEE5051E6D63AF00207B17 /* RLMPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */; };
+		22AEE5061E6D63AF00207B17 /* RLMStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F81E6D63AF00207B17 /* RLMStartView.m */; };
+		22AEE50E1E6D642400207B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE5081E6D642400207B17 /* Assets.xcassets */; };
+		22AEE50F1E6D642400207B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE5091E6D642400207B17 /* LaunchScreen.storyboard */; };
+		22AEE5101E6D642400207B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE50B1E6D642400207B17 /* Main.storyboard */; };
+		22AEE5111E6D642400207B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE50D1E6D642400207B17 /* Images.xcassets */; };
+		22CE55C71E6D61ED008E49F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE55C61E6D61ED008E49F1 /* main.m */; };
+		8F43E81CDDAE93E94BC51CBB /* libPods-RealmPuzzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D317F2EEEF8F09851D109B5E /* libPods-RealmPuzzle.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22AEE4DB1E6D63AF00207B17 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22AEE4DC1E6D63AF00207B17 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22AEE4E41E6D63AF00207B17 /* RLMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMViewController.h; sourceTree = "<group>"; };
+		22AEE4E51E6D63AF00207B17 /* RLMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMViewController.m; sourceTree = "<group>"; };
+		22AEE4E91E6D63AF00207B17 /* RLMPuzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPuzzle.h; sourceTree = "<group>"; };
+		22AEE4EA1E6D63AF00207B17 /* RLMPuzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzle.m; sourceTree = "<group>"; };
+		22AEE4EB1E6D63AF00207B17 /* RLMPuzzlePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPuzzlePiece.h; sourceTree = "<group>"; };
+		22AEE4EC1E6D63AF00207B17 /* RLMPuzzlePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzlePiece.m; sourceTree = "<group>"; };
+		22AEE4ED1E6D63AF00207B17 /* Puzzle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Puzzle-Info.plist"; sourceTree = "<group>"; };
+		22AEE4EE1E6D63AF00207B17 /* Puzzle.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Puzzle.entitlements; sourceTree = "<group>"; };
+		22AEE4EF1E6D63AF00207B17 /* RLMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMConstants.h; sourceTree = "<group>"; };
+		22AEE4F31E6D63AF00207B17 /* RLMPuzzlePieceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPuzzlePieceView.h; sourceTree = "<group>"; };
+		22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzlePieceView.m; sourceTree = "<group>"; };
+		22AEE4F51E6D63AF00207B17 /* RLMPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPuzzleView.h; sourceTree = "<group>"; };
+		22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzleView.m; sourceTree = "<group>"; };
+		22AEE4F71E6D63AF00207B17 /* RLMStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMStartView.h; sourceTree = "<group>"; };
+		22AEE4F81E6D63AF00207B17 /* RLMStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMStartView.m; sourceTree = "<group>"; };
+		22AEE5081E6D642400207B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22AEE50A1E6D642400207B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22AEE50C1E6D642400207B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22AEE50D1E6D642400207B17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22CE55C21E6D61ED008E49F1 /* RealmPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CE55C61E6D61ED008E49F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		450DB4999044D3253E5BF3E3 /* Pods-RealmPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPuzzle.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPuzzle/Pods-RealmPuzzle.release.xcconfig"; sourceTree = "<group>"; };
+		B558E59BF13B4ABAA815535E /* Pods-RealmPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPuzzle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPuzzle/Pods-RealmPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		D317F2EEEF8F09851D109B5E /* libPods-RealmPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22CE55BF1E6D61ED008E49F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F43E81CDDAE93E94BC51CBB /* libPods-RealmPuzzle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22AEE4E31E6D63AF00207B17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22AEE4E41E6D63AF00207B17 /* RLMViewController.h */,
+				22AEE4E51E6D63AF00207B17 /* RLMViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		22AEE4E81E6D63AF00207B17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22AEE4E91E6D63AF00207B17 /* RLMPuzzle.h */,
+				22AEE4EA1E6D63AF00207B17 /* RLMPuzzle.m */,
+				22AEE4EB1E6D63AF00207B17 /* RLMPuzzlePiece.h */,
+				22AEE4EC1E6D63AF00207B17 /* RLMPuzzlePiece.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22AEE4F21E6D63AF00207B17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22AEE4F31E6D63AF00207B17 /* RLMPuzzlePieceView.h */,
+				22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */,
+				22AEE4F51E6D63AF00207B17 /* RLMPuzzleView.h */,
+				22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */,
+				22AEE4F71E6D63AF00207B17 /* RLMStartView.h */,
+				22AEE4F81E6D63AF00207B17 /* RLMStartView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22AEE5071E6D642400207B17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22AEE5081E6D642400207B17 /* Assets.xcassets */,
+				22AEE5091E6D642400207B17 /* LaunchScreen.storyboard */,
+				22AEE50B1E6D642400207B17 /* Main.storyboard */,
+				22AEE50D1E6D642400207B17 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22CE55B91E6D61ED008E49F1 = {
+			isa = PBXGroup;
+			children = (
+				22CE55C41E6D61ED008E49F1 /* RealmPuzzle */,
+				22CE55C31E6D61ED008E49F1 /* Products */,
+				94CA1A071BCC39D453BED316 /* Pods */,
+				85CCF72127E6294DC86E4974 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22CE55C31E6D61ED008E49F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22CE55C21E6D61ED008E49F1 /* RealmPuzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22CE55C41E6D61ED008E49F1 /* RealmPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				22AEE4EF1E6D63AF00207B17 /* RLMConstants.h */,
+				22AEE4DB1E6D63AF00207B17 /* AppDelegate.h */,
+				22AEE4DC1E6D63AF00207B17 /* AppDelegate.m */,
+				22AEE4E31E6D63AF00207B17 /* Controllers */,
+				22AEE4E81E6D63AF00207B17 /* Models */,
+				22AEE4F21E6D63AF00207B17 /* Views */,
+				22AEE5071E6D642400207B17 /* Resources */,
+				22CE55C51E6D61ED008E49F1 /* Supporting Files */,
+			);
+			path = RealmPuzzle;
+			sourceTree = "<group>";
+		};
+		22CE55C51E6D61ED008E49F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22AEE4EE1E6D63AF00207B17 /* Puzzle.entitlements */,
+				22AEE4ED1E6D63AF00207B17 /* Puzzle-Info.plist */,
+				22CE55C61E6D61ED008E49F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85CCF72127E6294DC86E4974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D317F2EEEF8F09851D109B5E /* libPods-RealmPuzzle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94CA1A071BCC39D453BED316 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B558E59BF13B4ABAA815535E /* Pods-RealmPuzzle.debug.xcconfig */,
+				450DB4999044D3253E5BF3E3 /* Pods-RealmPuzzle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22CE55C11E6D61ED008E49F1 /* RealmPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CE55D91E6D61ED008E49F1 /* Build configuration list for PBXNativeTarget "RealmPuzzle" */;
+			buildPhases = (
+				A43580557B1C00A46A99FB18 /* [CP] Check Pods Manifest.lock */,
+				22CE55BE1E6D61ED008E49F1 /* Sources */,
+				22CE55BF1E6D61ED008E49F1 /* Frameworks */,
+				22CE55C01E6D61ED008E49F1 /* Resources */,
+				50CAD55020C961F1F6FA2B7D /* [CP] Embed Pods Frameworks */,
+				CB9ABF3DDE57FA65F8912EFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmPuzzle;
+			productName = RealmPuzzle;
+			productReference = 22CE55C21E6D61ED008E49F1 /* RealmPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22CE55BA1E6D61ED008E49F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Realm;
+				TargetAttributes = {
+					22CE55C11E6D61ED008E49F1 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = QX5CR2FTN2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 22CE55BD1E6D61ED008E49F1 /* Build configuration list for PBXProject "RealmPuzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22CE55B91E6D61ED008E49F1;
+			productRefGroup = 22CE55C31E6D61ED008E49F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22CE55C11E6D61ED008E49F1 /* RealmPuzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22CE55C01E6D61ED008E49F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22AEE50F1E6D642400207B17 /* LaunchScreen.storyboard in Resources */,
+				22AEE5111E6D642400207B17 /* Images.xcassets in Resources */,
+				22AEE50E1E6D642400207B17 /* Assets.xcassets in Resources */,
+				22AEE5021E6D63AF00207B17 /* Puzzle-Info.plist in Resources */,
+				22AEE5101E6D642400207B17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50CAD55020C961F1F6FA2B7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmPuzzle/Pods-RealmPuzzle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43580557B1C00A46A99FB18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9ABF3DDE57FA65F8912EFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmPuzzle/Pods-RealmPuzzle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22CE55BE1E6D61ED008E49F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22AEE5041E6D63AF00207B17 /* RLMPuzzlePieceView.m in Sources */,
+				22AEE5061E6D63AF00207B17 /* RLMStartView.m in Sources */,
+				22AEE5051E6D63AF00207B17 /* RLMPuzzleView.m in Sources */,
+				22AEE4F91E6D63AF00207B17 /* AppDelegate.m in Sources */,
+				22CE55C71E6D61ED008E49F1 /* main.m in Sources */,
+				22AEE5011E6D63AF00207B17 /* RLMPuzzlePiece.m in Sources */,
+				22AEE4FD1E6D63AF00207B17 /* RLMViewController.m in Sources */,
+				22AEE5001E6D63AF00207B17 /* RLMPuzzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22AEE5091E6D642400207B17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22AEE50A1E6D642400207B17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22AEE50B1E6D642400207B17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22AEE50C1E6D642400207B17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22CE55D71E6D61ED008E49F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22CE55D81E6D61ED008E49F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22CE55DA1E6D61ED008E49F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B558E59BF13B4ABAA815535E /* Pods-RealmPuzzle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QX5CR2FTN2;
+				INFOPLIST_FILE = RealmPuzzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.RealmPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22CE55DB1E6D61ED008E49F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450DB4999044D3253E5BF3E3 /* Pods-RealmPuzzle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QX5CR2FTN2;
+				INFOPLIST_FILE = RealmPuzzle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.realm.RealmPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22CE55BD1E6D61ED008E49F1 /* Build configuration list for PBXProject "RealmPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CE55D71E6D61ED008E49F1 /* Debug */,
+				22CE55D81E6D61ED008E49F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CE55D91E6D61ED008E49F1 /* Build configuration list for PBXNativeTarget "RealmPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CE55DA1E6D61ED008E49F1 /* Debug */,
+				22CE55DB1E6D61ED008E49F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22CE55BA1E6D61ED008E49F1 /* Project object */;
+}
