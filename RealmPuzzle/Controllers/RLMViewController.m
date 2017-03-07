@@ -23,14 +23,14 @@
 #import "RLMPuzzle.h"
 #import "RLMPuzzlePiece.h"
 #import "RLMPuzzleView.h"
-#import "RLMStartView.h"
+
+@import RealmLoginKit;
 
 static NSInteger kRLMPuzzleUUID = 0;
 static CGFloat   kRLMPuzzleCanvasMaxSize = 768.0f;
 
 @interface RLMViewController () <RLMPuzzleViewDelegate, UIAlertViewDelegate>
 
-@property (nonatomic, strong) RLMStartView *startView;
 @property (nonatomic, strong) RLMPuzzleView *puzzleView;
 @property (nonatomic, strong) NSMutableArray *puzzlePieces;
 
@@ -70,19 +70,37 @@ static CGFloat   kRLMPuzzleCanvasMaxSize = 768.0f;
     self.puzzleView.frame = (CGRect){{floorf((CGRectGetWidth(self.view.frame) - CGRectGetWidth(self.puzzleView.frame)) * 0.5f), floorf((CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.puzzleView.frame)) * 0.5f)}, self.puzzleView.frame.size};
     self.puzzleView.delegate = self;
     [self.view addSubview:self.puzzleView];
-
-    self.startView = [[RLMStartView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:self.startView];
-    
-    __weak typeof(self) weakSelf = self;
-    self.startView.connectButtonTapped = ^{
-        [weakSelf connectToServer];
-    };
     
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetGestureRecognized:)];
     tapRecognizer.numberOfTouchesRequired = 3;
     tapRecognizer.numberOfTapsRequired = 3;
     [self.view addGestureRecognizer:tapRecognizer];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    RLMLoginViewController *loginController = [[RLMLoginViewController alloc] initWithStyle:LoginViewControllerStyleLightTranslucent];
+    loginController.loginSuccessfulHandler = ^(RLMSyncUser *user) {
+        NSURL *syncURL = [NSURL URLWithString:[NSString stringWithFormat:@"realm://%@:9080/~/Puzzle", loginController.serverURL]];
+        RLMRealmConfiguration *configuration = [RLMRealmConfiguration defaultConfiguration];
+        [configuration setSyncConfiguration:[[RLMSyncConfiguration alloc] initWithUser:user realmURL:syncURL]];
+        [RLMRealmConfiguration setDefaultConfiguration:configuration];
+
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        RLMPuzzle *puzzle = [RLMPuzzle objectForPrimaryKey:@(kRLMPuzzleUUID)];
+        if (!puzzle) {
+            RLMPuzzle *puzzle = [[RLMPuzzle alloc] init];
+            puzzle.uuid = kRLMPuzzleUUID;
+            [realm transactionWithBlock:^{
+                [realm addObject:puzzle];
+            }];
+        }
+
+        [self startPuzzle];
+    };
+    [self presentViewController:loginController animated:YES completion:nil];
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -91,44 +109,6 @@ static CGFloat   kRLMPuzzleCanvasMaxSize = 768.0f;
 }
 
 #pragma mark - Puzzle State Management -
-- (void)connectToServer
-{
-    self.startView.loading = YES;
-    
-    NSURL *authURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@:9080", self.startView.hostName]];
-    
-    RLMSyncCredentials *credential = [RLMSyncCredentials credentialsWithUsername:self.startView.userName password:self.startView.password register:NO];
-    [RLMSyncUser logInWithCredentials:credential authServerURL:authURL onCompletion:^(RLMSyncUser *user, NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (error) {
-                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"An Error Ocurred" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
-                [alertController addAction:[UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleDefault handler:nil]];
-                self.startView.loading = NO;
-                [self presentViewController:alertController animated:YES completion:nil];
-                return;
-            }
-
-            NSURL *syncURL = [NSURL URLWithString:[NSString stringWithFormat:@"realm://%@:9080/~/Puzzle", self.startView.hostName]];
-
-            RLMRealmConfiguration *configuration = [RLMRealmConfiguration defaultConfiguration];
-            [configuration setSyncConfiguration:[[RLMSyncConfiguration alloc] initWithUser:user realmURL:syncURL]];
-            [RLMRealmConfiguration setDefaultConfiguration:configuration];
-
-            RLMRealm *realm = [RLMRealm defaultRealm];
-            RLMPuzzle *puzzle = [RLMPuzzle objectForPrimaryKey:@(kRLMPuzzleUUID)];
-            if (!puzzle) {
-                RLMPuzzle *puzzle = [[RLMPuzzle alloc] init];
-                puzzle.uuid = kRLMPuzzleUUID;
-                [realm transactionWithBlock:^{
-                    [realm addObject:puzzle];
-                }];
-            }
-            
-            [self startPuzzle];
-        });
-    }];
-    
-}
 
 - (void)startPuzzle
 {
@@ -150,19 +130,14 @@ static CGFloat   kRLMPuzzleCanvasMaxSize = 768.0f;
         firstTime = YES;
     }
 
-    [UIView animateWithDuration:0.5f animations:^{
-        self.startView.alpha = 0.0f;
-    } completion:^(BOOL complete) {
-        [self.startView removeFromSuperview];
-        self.startView = nil;
-        
+    [self dismissViewControllerAnimated:YES completion:^{
         if (firstTime) {
             [self.puzzleView scramblePiecesAnimated];
         }
         else {
             [self updatePuzzleState];
         }
-        
+
         [self setupNotifications];
     }];
 }
@@ -195,9 +170,7 @@ static CGFloat   kRLMPuzzleCanvasMaxSize = 768.0f;
 #pragma mark - Notifications -
 - (void)resetGestureRecognized:(UITapGestureRecognizer *)gestureRecognizer
 {
-    if (self.startView) {
-        return;
-    }
+    if (self.presentingViewController) { return; }
 
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Reset Puzzle" message:@"Do you want to re-shuffle the puzzle pieces?" preferredStyle:UIAlertControllerStyleAlert];
     [controller addAction:[UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

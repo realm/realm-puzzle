@@ -14,13 +14,12 @@
 		22AEE5021E6D63AF00207B17 /* Puzzle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE4ED1E6D63AF00207B17 /* Puzzle-Info.plist */; };
 		22AEE5041E6D63AF00207B17 /* RLMPuzzlePieceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */; };
 		22AEE5051E6D63AF00207B17 /* RLMPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */; };
-		22AEE5061E6D63AF00207B17 /* RLMStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F81E6D63AF00207B17 /* RLMStartView.m */; };
 		22AEE50E1E6D642400207B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE5081E6D642400207B17 /* Assets.xcassets */; };
 		22AEE50F1E6D642400207B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE5091E6D642400207B17 /* LaunchScreen.storyboard */; };
 		22AEE5101E6D642400207B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE50B1E6D642400207B17 /* Main.storyboard */; };
 		22AEE5111E6D642400207B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE50D1E6D642400207B17 /* Images.xcassets */; };
 		22CE55C71E6D61ED008E49F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CE55C61E6D61ED008E49F1 /* main.m */; };
-		8F43E81CDDAE93E94BC51CBB /* libPods-RealmPuzzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D317F2EEEF8F09851D109B5E /* libPods-RealmPuzzle.a */; };
+		EE2638A89F7170B041FE89B8 /* Pods_RealmPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A887D8397A0107683036E4 /* Pods_RealmPuzzle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +38,6 @@
 		22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzlePieceView.m; sourceTree = "<group>"; };
 		22AEE4F51E6D63AF00207B17 /* RLMPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPuzzleView.h; sourceTree = "<group>"; };
 		22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzleView.m; sourceTree = "<group>"; };
-		22AEE4F71E6D63AF00207B17 /* RLMStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMStartView.h; sourceTree = "<group>"; };
-		22AEE4F81E6D63AF00207B17 /* RLMStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMStartView.m; sourceTree = "<group>"; };
 		22AEE5081E6D642400207B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22AEE50A1E6D642400207B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22AEE50C1E6D642400207B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +46,7 @@
 		22CE55C61E6D61ED008E49F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		450DB4999044D3253E5BF3E3 /* Pods-RealmPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPuzzle.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPuzzle/Pods-RealmPuzzle.release.xcconfig"; sourceTree = "<group>"; };
 		B558E59BF13B4ABAA815535E /* Pods-RealmPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPuzzle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPuzzle/Pods-RealmPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
-		D317F2EEEF8F09851D109B5E /* libPods-RealmPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A887D8397A0107683036E4 /* Pods_RealmPuzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmPuzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F43E81CDDAE93E94BC51CBB /* libPods-RealmPuzzle.a in Frameworks */,
+				EE2638A89F7170B041FE89B8 /* Pods_RealmPuzzle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +88,6 @@
 				22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */,
 				22AEE4F51E6D63AF00207B17 /* RLMPuzzleView.h */,
 				22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */,
-				22AEE4F71E6D63AF00207B17 /* RLMStartView.h */,
-				22AEE4F81E6D63AF00207B17 /* RLMStartView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,7 +149,7 @@
 		85CCF72127E6294DC86E4974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D317F2EEEF8F09851D109B5E /* libPods-RealmPuzzle.a */,
+				F6A887D8397A0107683036E4 /* Pods_RealmPuzzle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AEE5041E6D63AF00207B17 /* RLMPuzzlePieceView.m in Sources */,
-				22AEE5061E6D63AF00207B17 /* RLMStartView.m in Sources */,
 				22AEE5051E6D63AF00207B17 /* RLMPuzzleView.m in Sources */,
 				22AEE4F91E6D63AF00207B17 /* AppDelegate.m in Sources */,
 				22CE55C71E6D61ED008E49F1 /* main.m in Sources */,
