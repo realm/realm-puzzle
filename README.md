@@ -52,6 +52,8 @@ The data model behind Realm Puzzle is quite simple. There are 2 Realm object sub
 
 @end
 
+//---
+
 @interface RLMPuzzlePiece : RLMObject
 
 @property NSInteger identifier;
@@ -78,6 +80,12 @@ The following modules will be installed as part of the CocoaPods installation:
 - [RealmSwift](https://realm.io)  The Realm bindings for Cocoa/Swift.
 
 - [Realm LoginKit](https://github.com/realm-demos/realm-loginkit) A Realm control for logging in to Realm servers.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details!
+
+This project adheres to the [Contributor Covenant Code of Conduct](https://realm.io/conduct/). By participating, you are expected to uphold this code. Please report unacceptable behavior to [info@realm.io](mailto:info@realm.io).
 
 ## License
 
