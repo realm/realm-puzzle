@@ -77,9 +77,9 @@ These new coordinates are then synchronized via the Realm Mobile Platform. A glo
 
 The following modules will be installed as part of the CocoaPods installation:
 
-- [RealmSwift](https://realm.io)  The Realm bindings for Cocoa/Swift.
+- [RealmSwift](https://realm.io) - The Realm bindings for Cocoa/Swift.
 
-- [Realm LoginKit](https://github.com/realm-demos/realm-loginkit) A Realm control for logging in to Realm servers.
+- [Realm LoginKit](https://github.com/realm-demos/realm-loginkit) - A Realm control for logging in to Realm servers.
 
 ## Contributing
 
