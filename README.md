@@ -75,11 +75,11 @@ Whenever the user taps and drags a puzzle piece, for each frame of movement, a R
 
 These new coordinates are then synchronized via the Realm Mobile Platform. A global `RLMRealm` change notification block is registered, and whenever a change occurs, all puzzle pieces positions are refreshed.
 
-# 3rd Party Dependencies
+# Third Party Dependencies
 
 The following modules will be installed as part of the CocoaPods installation:
 
-- [Realm Swift](https://realm.io) - The Realm bindings for Cocoa/Swift.
+- [Realm Objective-C](https://realm.io) - The Objective-C version of the Realm Mobile Database.
 
 - [Realm LoginKit](https://github.com/realm-demos/realm-loginkit) - A Realm control for logging in to Realm servers.
 
