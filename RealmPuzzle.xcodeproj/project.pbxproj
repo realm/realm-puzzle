@@ -14,7 +14,6 @@
 		22AEE5021E6D63AF00207B17 /* Puzzle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE4ED1E6D63AF00207B17 /* Puzzle-Info.plist */; };
 		22AEE5041E6D63AF00207B17 /* RLMPuzzlePieceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */; };
 		22AEE5051E6D63AF00207B17 /* RLMPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */; };
-		22AEE50E1E6D642400207B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE5081E6D642400207B17 /* Assets.xcassets */; };
 		22AEE50F1E6D642400207B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE5091E6D642400207B17 /* LaunchScreen.storyboard */; };
 		22AEE5101E6D642400207B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE50B1E6D642400207B17 /* Main.storyboard */; };
 		22AEE5111E6D642400207B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22AEE50D1E6D642400207B17 /* Images.xcassets */; };
@@ -38,7 +37,6 @@
 		22AEE4F41E6D63AF00207B17 /* RLMPuzzlePieceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzlePieceView.m; sourceTree = "<group>"; };
 		22AEE4F51E6D63AF00207B17 /* RLMPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMPuzzleView.h; sourceTree = "<group>"; };
 		22AEE4F61E6D63AF00207B17 /* RLMPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMPuzzleView.m; sourceTree = "<group>"; };
-		22AEE5081E6D642400207B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22AEE50A1E6D642400207B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22AEE50C1E6D642400207B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22AEE50D1E6D642400207B17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		22AEE5071E6D642400207B17 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				22AEE5081E6D642400207B17 /* Assets.xcassets */,
 				22AEE5091E6D642400207B17 /* LaunchScreen.storyboard */,
 				22AEE50B1E6D642400207B17 /* Main.storyboard */,
 				22AEE50D1E6D642400207B17 /* Images.xcassets */,
@@ -227,7 +224,6 @@
 			files = (
 				22AEE50F1E6D642400207B17 /* LaunchScreen.storyboard in Resources */,
 				22AEE5111E6D642400207B17 /* Images.xcassets in Resources */,
-				22AEE50E1E6D642400207B17 /* Assets.xcassets in Resources */,
 				22AEE5021E6D63AF00207B17 /* Puzzle-Info.plist in Resources */,
 				22AEE5101E6D642400207B17 /* Main.storyboard in Resources */,
 			);
