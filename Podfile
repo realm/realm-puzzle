@@ -1,12 +1,19 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'RealmPuzzle' do
-  use_frameworks!
-
+def shared_pods
   pod 'Realm'
   pod 'RealmLoginKit'
+end
 
+target 'RealmPuzzle' do
+  use_frameworks!
+  shared_pods
+end
+
+target 'RealmPuzzleTests' do
+  use_frameworks!
+  shared_pods
 end
 
 post_install do |installer|
