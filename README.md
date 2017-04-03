@@ -5,6 +5,9 @@ This app is a simple implementation of a team game. Multiple players simultaneou
 
 ![Realm Puzzle](screenshot.jpg)
 
+[![CI Status](http://img.shields.io/travis/realm-demos/realm-puzzle.svg?style=flat)](http://api.travis-ci.org/realm-demos/realm-puzzle.svg)
+[![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](https://raw.githubusercontent.com/realm-demos/realm-puzzle/master/LICENSE)
+
 # Features
 
 - [x] Allows users to collaborate in solving a jigsaw puzzle together.
