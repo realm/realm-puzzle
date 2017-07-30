@@ -95,3 +95,5 @@ This project adheres to the [Contributor Covenant Code of Conduct](https://realm
 # License
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
+
+![analytics](https://ga-beacon.appspot.com/UA-50247013-2/{{repo_name}}/README?pixel)
