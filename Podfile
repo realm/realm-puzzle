@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 def shared_pods
-  pod 'Realm'
+  pod 'Realm', '3.0.0-rc.1'
   pod 'RealmLoginKit'
 end
 

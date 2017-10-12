@@ -1,21 +1,25 @@
 PODS:
-  - Realm (2.5.0):
-    - Realm/Headers (= 2.5.0)
-  - Realm/Headers (2.5.0)
-  - RealmLoginKit (0.0.12):
+  - Realm (3.0.0-rc.1):
+    - Realm/Headers (= 3.0.0-rc.1)
+  - Realm/Headers (3.0.0-rc.1)
+  - RealmLoginKit (0.1.3):
+    - Realm
+    - RealmLoginKit/Core (= 0.1.3)
+    - TORoundedTableView
+  - RealmLoginKit/Core (0.1.3):
     - Realm
     - TORoundedTableView
-  - TORoundedTableView (0.0.3)
+  - TORoundedTableView (0.1.3)
 
 DEPENDENCIES:
-  - Realm
+  - Realm (= 3.0.0-rc.1)
   - RealmLoginKit
 
 SPEC CHECKSUMS:
-  Realm: 62abce501668580092d2be9b6ba7324a3d5f906a
-  RealmLoginKit: f3a498de5e6ab60b361f8e4ca6d6736a8055628e
-  TORoundedTableView: 4155565233135d81d6626a0c4ecfba27991cf2b1
+  Realm: f79164edf2fb3807debe2fd2132ae15ed642d0a6
+  RealmLoginKit: 646d412bb28b8319235fb48e54ed6d6e57b98e17
+  TORoundedTableView: cd1437ef81ab3888dea8c06d2dfe4795bcaac768
 
-PODFILE CHECKSUM: 9a4f78091b1559e388cbb2f4611bda5b0c2191a8
+PODFILE CHECKSUM: e2abeccdd7303494cac9c611b79e6a3317628384
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
