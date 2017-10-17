@@ -193,7 +193,7 @@ static CGFloat   kRLMPuzzleCanvasMaxSize = 768.0f;
 
 - (void)removeNotifications
 {
-    [self.notificationToken stop];
+    [self.notificationToken invalidate];
 }
 
 @end
