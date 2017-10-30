@@ -1,5 +1,5 @@
 # Realm Puzzle
-> A Collaborative Puzzle Game, powered by the Realm Mobile Platform
+> A Collaborative Puzzle Game, powered by the Realm Platform
 
 This app is a simple implementation of a team game. Multiple players simultaneously work together to solve a jigsaw puzzle on a shared canvas. Whenever one player moves a piece, all players see the piece move in real-time.
 
@@ -12,7 +12,7 @@ This app is a simple implementation of a team game. Multiple players simultaneou
 
 - [x] Allows users to collaborate in solving a jigsaw puzzle together.
 - [x] Puzzle can be reset by tapping the screen with 3 fingers, 3 times.
-- [x] Can connect to any running instance of Realm Mobile Platform
+- [x] Can connect to any running instance of Realm Object Server
 
 # Requirements
 
@@ -37,7 +37,7 @@ Another useful tool is [Realm Studio](https://realm.io/products/realm-studio/) w
 3. Run `pod install` to install the necessary dependencies needed by Realm Puzzle.
 4. Open `RealmPuzzle.xcworkspace` instead of the `xcproject` file.
 
-# Connecting to the Realm Mobile Platform
+# Connecting to the Realm Object Server
 
 When launching the app each time, you'll be presented with a login form in order to connect to the right Realm Object Server instance.
 
