@@ -18,13 +18,15 @@ This app is a simple implementation of a team game. Multiple players simultaneou
 
 - iOS 9.0 and above
 - Xcode 8.3
+- Realm Plaform / Realm Object Server 2.0 and above
 
-# Setting Up Realm Mobile Platform
+### Realm Platform
 
-In order to properly use Realm Puzzle, an instance of the Realm Object Server must be running for which each client copy of the app can connect.
+This application demonstrates features of the [Realm Platform](http://lrealm.io) and needs to have a working instance of the Realm Object Server version 2.0 or higher available to make data available between instances of the Puzzle app. The Realm Mobile Platform can be downloaded from [Realm  Platform](http://realm.io/pricing).  It is delivered as a series of as a modular server system that runs with nodejs and can be installed on macOS or Linux.  For information on installing the Realm Platform Server components, please download a copy of the [Developer edition](https://realm.io/pricing/).
 
-* The [macOS version](https://realm.io/docs/get-started/installation/mac/) can be downloaded and run as a `localhost` on any desktop Mac.
-* The [Linux version](https://realm.io/docs/get-started/installation/linux/) can be installed on a publicly accessible server and accessed over the internet.
+### Realm Studio
+Another useful tool is [Realm Studio](https://realm.io/products/realm-studio/) which is available for macOS, Linux nd Windows and allow developers to inspect and manage Realms. Realm Studio is recommended for all developers and can be downloaded from the [Realm web site](https://realm.io/products/realm-studio/).
+
 
 # Installation
 
