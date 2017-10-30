@@ -5,7 +5,8 @@
 ## Build generated
 build/
 DerivedData/
-
+.DS_Store
+RealmPuzzle/DS_Store
 ## Various settings
 *.pbxuser
 !default.pbxuser

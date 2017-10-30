@@ -10,9 +10,13 @@ The Realm puzzle demo is a simple app that demonstrates a collaborative jigsaw p
 
 This app uses [Cocoapods](https://www.cocoapods.org) to set up the project's 3rd party dependencies. Installation can be directly (from instructions at the Cocapods site) or alternatively through a package management system like [Homebrew](brew.sh/).
 
-### Realm Mobile Platform
+### Realm Platform
 
-This application demonstrates features of the [Realm Mobile Platform](http://lrealm.io) and needs to have a working instance of the Realm Object Server available to make tasks, and other data available between instances of the Fieldwork app. The Realm Mobile Platform can be downloaded from [Realm Mobile Platform](http://realm.io) and exists in two forms, a ready-to-run macOS version of the server, and a Linux version that runs on RHEL/CentOS versions 6/7 and Ubuntu as well as several Amazon AMIs and Digital Ocean Droplets. The macOS version can be run with the Fieldwork right out of the box; the Linux version will require access to a Linux server.
+This application demonstrates features of the [Realm Platform](http://lrealm.io) and needs to have a working instance of the Realm Object Server available to make tasks, and other data available between instances of the Puzzle app. The Realm Mobile Platform can be downloaded from [Realm  Platform](http://realm.io/pricing) and exists as a module server system that runs with nodejs and can be installed on macOS or Linux.  For information on installing the Realm Platform Server components, please download a copy of the [Developer edition](https://realm.io/pricing/).
+
+### Realm Studio
+Another useful tool is [Realm Studio](https://realm.io/products/realm-studio/) which is available for macOS, Linux nd Windows and allow developers to inspect and manage Realms. Realm Studio is recommended for all developers and can be downloaded from the [Realm web site](https://realm.io/products/realm-studio/).
+
 
 
 ### 3rd Party Modules
