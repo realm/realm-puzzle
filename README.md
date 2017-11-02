@@ -18,14 +18,15 @@ This app is a simple implementation of a team game. Multiple players simultaneou
 
 - iOS 9.0 and above
 - Xcode 8.3
-- Realm Plaform / Realm Object Server 2.0 and above
+- Realm Plaform / Realm Object Server 2.x
+
 
 ### Realm Platform
 
-This application demonstrates features of the [Realm Platform](https://realm.io/products/realm-platform/) and needs to have a working instance of the Realm Object Server version 2 to make data available between instances of the Puzzle app. The Realm Platform can be installed via npm as a node application for macOS or Linux. For installation instructions please see the [Realm Object Server installation instructions](https://realm.io/docs/get-started/installation/developer-edition/). If you already got Node.js installed, it's a one-liner.
+This application demonstrates features of the [Realm Platform](https://realm.io/products/realm-platform/) and needs to have a working instance of the Realm Object Server version 2.x to make data available between instances of the Puzzle app. The Realm Object Server can be installed via npm as a node application for macOS or Linux. Please see the [installation instructions](https://realm.io/docs/get-started/installation/developer-edition/). If you already got Node.js installed, it's a one-liner.
 
 ### Realm Studio
-Another useful tool is [Realm Studio](https://realm.io/products/realm-studio/) which is available for macOS, Linux nd Windows and allow developers to inspect and manage Realms. Realm Studio is recommended for all developers and can be downloaded from the [Realm web site](https://realm.io/products/realm-studio/).
+Another useful tool is [Realm Studio](https://realm.io/products/realm-studio/) which is available for macOS, Linux and Windows and allow developers to inspect and manage Realms and the Realm Object Server. Realm Studio is recommended for all developers and can be downloaded from the [Realm web site](https://realm.io/products/realm-studio/).
 
 
 # Installation
